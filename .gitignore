@@ -1,0 +1,5 @@
+**/bin
+**/obj
+**/PublishProfiles
+**/.vs
+products.log

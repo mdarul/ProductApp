@@ -1,0 +1,57 @@
+.grid {
+    display: grid;
+    grid-template-columns: 20% 79.5%;
+    column-gap: 0.5%;
+}
+
+.sidebar {
+    float: left;
+    border-radius: 10px;
+    background-color: #bcbdf4;
+}
+
+.sidebar #sidebarContent {
+    margin: 20px;
+}
+
+.sidebarEntity {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #8081ec;
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 30px
+}
+
+.openSansFont {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.sidebarEntity + .sidebarEntity {
+    margin-top: 20px;
+}
+
+label {
+    margin-bottom:15px;
+    display: block;
+}
+
+.productEntity {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f9a4ec;
+    width: 250px;
+}
+
+.productEntity + .productEntity {
+    margin-top: 20px;
+}
+
+.mainFrame {
+    float: right;
+    border-radius: 10px;
+    background-color: #bcbdf4;
+}
+
+.mainFrame div {
+    padding: 10px;
+}
