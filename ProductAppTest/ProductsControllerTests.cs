@@ -123,6 +123,7 @@ namespace ProductAppTest
             var loggerMock = new Mock<ILogger<ProductsController>>();
             var productRepositoryMock = new Mock<IProductRepository>();
 
+            var initialListLength = mockList.Count;
             var newProductsList = new List<Product>(mockList);
             var productDto = new ProductForUpdateDto()
             {
@@ -139,6 +140,7 @@ namespace ProductAppTest
             var putResult = productsController.PutProduct(1, productDto);
             var okContentPostResult = Assert.IsType<OkObjectResult>(putResult);
 
+            Assert.Equal(initialListLength, newProductsList.Count);
             Assert.Equal(productDto.Name, newProductsList[0].Name);
             Assert.Equal(productDto.Category, newProductsList[0].Category);
             Assert.Equal(productDto.Cost, newProductsList[0].Cost);
